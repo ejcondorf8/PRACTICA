@@ -8,4 +8,9 @@ class Archivo:
             archivo.write(f'{pelicula}\n')
             print('ARCHIVO CREADO')
 
-    
+    @classmethod
+    def listar_pelicula(cls):
+        with open(cls.ruta,'r',encoding='utf8') as archivo:
+            for frase in archivo.readlines():
+                print(frase)
+            print('FINALIZO')
