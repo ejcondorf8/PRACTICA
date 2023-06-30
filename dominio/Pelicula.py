@@ -15,6 +15,9 @@ class Pelicula:
         return f'ID DE LA PELICULA {self._id} NOMBRE DE LA PELICULA {self._nombre} Y PRECIO DE LA PELICULA {self._precio} '
     
 
+    @property
+    def nombre(self):
+        return self._nombre
 
 
 
